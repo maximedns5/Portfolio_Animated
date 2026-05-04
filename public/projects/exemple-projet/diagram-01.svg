@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" fill="#FDFAF4"/>
+  <rect x="160" y="120" width="280" height="180" stroke="#2952A3" stroke-width="2"/>
+  <rect x="500" y="120" width="280" height="180" stroke="#2952A3" stroke-width="2"/>
+  <rect x="840" y="120" width="280" height="180" stroke="#2952A3" stroke-width="2"/>
+  <rect x="330" y="420" width="280" height="180" stroke="#2952A3" stroke-width="2"/>
+  <rect x="670" y="420" width="280" height="180" stroke="#2952A3" stroke-width="2"/>
+  <path d="M440 210H500M780 210H840M640 300V420" stroke="#1C1C1A" stroke-opacity=".5" stroke-width="2"/>
+  <text x="210" y="220" fill="#1C1C1A" font-family="monospace" font-size="30">DATA</text>
+  <text x="540" y="220" fill="#1C1C1A" font-family="monospace" font-size="30">COMPONENTS</text>
+  <text x="895" y="220" fill="#1C1C1A" font-family="monospace" font-size="30">PAGES</text>
+  <text x="385" y="520" fill="#1C1C1A" font-family="monospace" font-size="30">ROUTING</text>
+  <text x="745" y="520" fill="#1C1C1A" font-family="monospace" font-size="30">DEPLOY</text>
+</svg>

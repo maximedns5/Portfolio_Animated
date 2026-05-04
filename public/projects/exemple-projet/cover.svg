@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <rect width="1280" height="720" fill="#F4F0E6"/>
+  <rect x="90" y="90" width="1100" height="540" stroke="#2952A3" stroke-width="2"/>
+  <rect x="140" y="140" width="1000" height="440" stroke="#1C1C1A" stroke-opacity=".25" stroke-width="2"/>
+  <path d="M140 360H1140M640 140V580" stroke="#1C1C1A" stroke-opacity=".2" stroke-width="2"/>
+  <circle cx="640" cy="360" r="90" stroke="#2952A3" stroke-width="2"/>
+  <path d="M550 360H730M640 270V450" stroke="#2952A3" stroke-width="2"/>
+  <text x="140" y="640" fill="#1C1C1A" font-family="monospace" font-size="28" letter-spacing="4">PROJECT COVER / PLACEHOLDER BLUEPRINT</text>
+</svg>

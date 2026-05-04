@@ -1,0 +1,47 @@
+.fallback {
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(41, 82, 163, 0.06), rgba(28, 28, 26, 0.03)),
+    var(--color-bg-alt);
+  border: var(--border-thin);
+  color: var(--color-ink-light);
+  display: flex;
+  justify-content: center;
+  min-height: 180px;
+  padding: var(--space-4);
+  position: relative;
+  text-align: center;
+}
+
+.fallback::before,
+.fallback::after {
+  background: var(--color-grid);
+  content: '';
+  position: absolute;
+}
+
+.fallback::before {
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.fallback::after {
+  bottom: 0;
+  left: 50%;
+  top: 0;
+  width: 1px;
+}
+
+.filename {
+  background: rgba(253, 250, 244, 0.88);
+  border: var(--border-thin);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  padding: 6px 8px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}

@@ -1,0 +1,17 @@
+.tag {
+  background: var(--color-surface-2);
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink-light);
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: var(--tracking-wide);
+  padding: 3px 8px;
+}
+
+.accent {
+  background: var(--color-amber-soft);
+  border-color: rgba(217, 119, 6, 0.2);
+  color: var(--color-accent);
+}

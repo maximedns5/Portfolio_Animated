@@ -1,0 +1,337 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+/* ── HERO ── */
+.hero {
+  align-items: start;
+  display: grid;
+  gap: var(--space-8);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr 320px;
+  }
+}
+
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.heroTitle {
+  font-family: var(--font-title);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 60ch;
+}
+
+.intro p {
+  color: var(--color-ink-light);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  max-width: 62ch;
+}
+
+/* Glass contact card */
+.contactCard {
+  align-self: start;
+  background: var(--color-surface);
+  border: var(--border-thin);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  overflow: hidden;
+  padding: var(--space-6);
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-4));
+}
+
+.contactCardTitle {
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin: 0;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contactItem {
+  align-items: center;
+  color: var(--color-ink-light);
+  display: flex;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contactItem:hover { color: var(--color-ink); }
+
+.contactArrow {
+  color: var(--color-ink-faint);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.waTag {
+  background: #25D366;
+  border-radius: var(--radius-sm);
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 1px 5px;
+}
+
+.resumeButton {
+  align-items: center;
+  background: var(--gradient-sig);
+  border-radius: var(--radius-full);
+  color: white;
+  display: flex;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  gap: var(--space-2);
+  justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.resumeButton:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+/* ── SECTIONS ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── TIMELINE ── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: var(--space-2);
+}
+
+.timelineItem {
+  display: flex;
+  gap: var(--space-5);
+}
+
+.timelineLeft {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-top: 6px;
+  width: 20px;
+}
+
+.timelineDot {
+  background: var(--gradient-sig);
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+  height: 10px;
+  width: 10px;
+}
+
+.timelineLine {
+  background: var(--color-border-strong);
+  flex: 1;
+  margin: var(--space-2) 0;
+  min-height: 48px;
+  transform-origin: top center;
+  width: 1px;
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-bottom: var(--space-7);
+}
+
+.timelineHeader {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.period {
+  color: var(--color-ink-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  margin: 0;
+  max-width: 100%;
+}
+
+.inProgressBadge {
+  background: var(--gradient-sig);
+  border-radius: var(--radius-full);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-wider);
+  padding: 2px 9px;
+  text-transform: uppercase;
+}
+
+.degree {
+  color: var(--color-ink);
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.institution {
+  color: var(--color-ink-light);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 450;
+  margin: 0;
+  max-width: 100%;
+}
+
+.location {
+  color: var(--color-ink-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  margin: 0;
+  max-width: 100%;
+}
+
+.noteBody {
+  color: var(--color-ink-light);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  margin: var(--space-1) 0 0;
+  max-width: 56ch;
+}
+
+/* ── SKILLS ── */
+.skillsGrid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skillsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skillCard {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.skillCard:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.skillCategory {
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.skillPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.skillPill {
+  background: var(--color-surface-2);
+  border: var(--border-thin);
+  border-radius: var(--radius-full);
+  color: var(--color-ink-light);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.skillPill:hover {
+  background: var(--color-amber-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ── CONTACT STRIP ── */
+.contactRow {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.contactSep {
+  background: var(--color-border-strong);
+  border-radius: 1px;
+  height: 14px;
+  width: 1px;
+}
+
+.contactStrip {
+  color: var(--color-ink-light);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contactStrip:hover {
+  color: var(--color-ink);
+}

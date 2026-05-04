@@ -1,0 +1,18 @@
+.magnetic {
+  display: inline-flex;
+}
+
+.anchor {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttonWrap {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  padding: 0;
+}

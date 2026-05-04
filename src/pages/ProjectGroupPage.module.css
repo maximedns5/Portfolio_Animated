@@ -1,0 +1,30 @@
+.backLink {
+  align-items: center;
+  color: var(--color-ink-light);
+  display: inline-flex;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--color-ink);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.desc {
+  color: var(--color-ink-light);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  margin: 0;
+  max-width: 58ch;
+}
