@@ -298,7 +298,7 @@ Monthly consumption charts, annual summary, and sensitivity analysis.
             caption: 'FIG. 02 — Results dashboard: monthly heating and ventilation consumption',
           },
         ],
-        links: [{ label: 'Live demo', url: 'https://maximedns5.github.io/ThermoSim/', type: 'demo' }],
+        links: [{ label: 'Current Version', url: 'https://maximedns5.github.io/Thermosim_V2/', type: 'demo' }],
         status: 'in-progress',
       },
       {
