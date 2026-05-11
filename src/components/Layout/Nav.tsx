@@ -96,7 +96,7 @@ export default function Nav() {
             className={styles.ctaButton}
             aria-label="Contact"
           >
-            <span>Hire me</span>
+            <span>Contact me</span>
             <ArrowUpRight size={13} />
           </a>
         </div>
