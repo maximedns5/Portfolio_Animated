@@ -447,7 +447,66 @@ quantifying the tradeoff between reproducibility and accuracy.
         links: [{ label: 'Full report — coming soon', url: '', type: 'pdf', disabled: true }],
         status: 'completed',
       },
-    ],
+      {
+      id: 'freecad-ai-agent',
+      title: 'AI-Driven CAD Generation',
+      subtitle: 'Multi-agent system for automated part design in FreeCAD',
+      year: 2026,
+      duration: '2026',
+      context: 'Personal project',
+      domains: ['software', 'machine-learning'],
+      tags: ['FreeCAD', 'LLM', 'AI Agents', 'Python', 'CAD', 'API', 'Web App'],
+      shortDesc:
+      'A web interface connected to FreeCAD via socket listeners, where a user prompt triggers a multi-agent pipeline that autonomously generates 3D parts through LLM-to-code injection — no manual CAD interaction required.',
+      fullDesc: `
+## Concept
+Traditional CAD workflows require manual modeling expertise. This project replaces
+that interaction with a natural-language interface: the user describes the part they
+need, and the system handles the rest.
+
+## Architecture
+| Layer | Role |
+|-------|------|
+| Front-end (React) | Captures user prompt and part specification inputs |
+| LLM API | Interprets the prompt and generates FreeCAD Python script |
+| Socket bridge | Relays generated code to FreeCAD via listening port |
+| FreeCAD backend | Executes the injected script and builds the 3D geometry |
+
+## How It Works
+The user submits a natural-language prompt alongside specific part requirements
+(dimensions, constraints, material hints). A **design agent** queries the LLM,
+which returns parametric Python code targeting FreeCAD's scripting API.
+That code is injected in real time through a **socket listener** connecting the
+front-end to a local FreeCAD instance — the part assembles itself without any
+manual modeling step.
+
+## Agent Pipeline
+Multiple agents handle distinct responsibilities: one parses the user's
+specification into structured parameters, another generates and validates the
+CAD script, and a final agent triggers execution and monitors the FreeCAD output.
+This modular design allows each stage to be tested and iterated independently.
+
+## Key Outcome
+End-to-end automated part generation from a plain-text description —
+bridging the gap between LLM reasoning and parametric 3D modeling.
+  `,
+  coverImage: '/projects/software-ml/freecad-ai/cover.png',
+  images: [
+    {
+      src: '/projects/software-ml/freecad-ai/img-01.png',
+      alt: 'Web interface — prompt and specification input',
+      caption: 'FIG. 01 — Front-end: user prompt and part specification form',
+    },
+    {
+      src: '/projects/software-ml/freecad-ai/img-02.png',
+      alt: 'Generated part in FreeCAD viewport',
+      caption: 'FIG. 02 — FreeCAD: autonomously generated 3D geometry from LLM output',
+    },
+  ],
+  links: [{label: 'online MVP — coming soon', disabled:true}],
+  status: 'in-progress',
+},
+    ], 
   },
   {
     id: 'research',
