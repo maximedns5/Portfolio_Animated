@@ -506,6 +506,8 @@ bridging the gap between LLM reasoning and parametric 3D modeling.
         links: [{ label: 'online MVP — coming soon', disabled: true }],
         status: 'in-progress',
       },
+    ],
+  },
   {
     id: 'research',
     title: 'Research & Industry Projects',
