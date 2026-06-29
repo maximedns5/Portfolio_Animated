@@ -457,7 +457,7 @@ quantifying the tradeoff between reproducibility and accuracy.
         domains: ['software', 'machine-learning'],
         tags: ['FreeCAD', 'LLM', 'AI Agents', 'Python', 'CAD', 'API', 'Web App'],
         shortDesc:
-        'A web interface connected to FreeCAD via socket listeners, where a user prompt triggers a multi-agent pipeline that autonomously generates 3D parts through LLM-to-code injection — no manual CAD interaction required.',
+          'A web interface connected to FreeCAD via socket listeners, where a user prompt triggers a multi-agent pipeline that autonomously generates 3D parts through LLM-to-code injection — no manual CAD interaction required.',
         fullDesc: `
 ## Concept
 Traditional CAD workflows require manual modeling expertise. This project replaces
@@ -489,23 +489,23 @@ This modular design allows each stage to be tested and iterated independently.
 ## Key Outcome
 End-to-end automated part generation from a plain-text description —
 bridging the gap between LLM reasoning and parametric 3D modeling.
-  `,
-      coverImage: '/projects/software-ml/freecad-ai/cover.png',
-      images: [
-      {
-        src: '/projects/software-ml/freecad-ai/img-01.png',
-        alt: 'Web interface — prompt and specification input',
-        caption: 'FIG. 01 — Front-end: user prompt and part specification form',
+        `,
+        coverImage: '/projects/software-ml/freecad-ai/cover.png',
+        images: [
+          {
+            src: '/projects/software-ml/freecad-ai/img-01.png',
+            alt: 'Web interface — prompt and specification input',
+            caption: 'FIG. 01 — Front-end: user prompt and part specification form',
+          },
+          {
+            src: '/projects/software-ml/freecad-ai/img-02.png',
+            alt: 'Generated part in FreeCAD viewport',
+            caption: 'FIG. 02 — FreeCAD: autonomously generated 3D geometry from LLM output',
+          },
+        ],
+        links: [{ label: 'online MVP — coming soon', disabled: true }],
+        status: 'in-progress',
       },
-      {
-        src: '/projects/software-ml/freecad-ai/img-02.png',
-        alt: 'Generated part in FreeCAD viewport',
-        caption: 'FIG. 02 — FreeCAD: autonomously generated 3D geometry from LLM output',
-      },
-    ],
-    links: [{label: 'online MVP — coming soon', disabled:true}],
-    status: 'in-progress',
-    },
   {
     id: 'research',
     title: 'Research & Industry Projects',
