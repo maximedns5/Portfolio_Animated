@@ -503,7 +503,7 @@ bridging the gap between LLM reasoning and parametric 3D modeling.
             caption: 'FIG. 02 — FreeCAD: autonomously generated 3D geometry from LLM output',
           },
         ],
-        links: [{ label: 'online MVP — coming soon', disabled: true }],
+        links: [],
         status: 'in-progress',
       },
     ],
